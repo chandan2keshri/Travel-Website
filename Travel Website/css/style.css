@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*####################### html element styling */
+html {
+  font-size: 62.5%;
+  /* font-size: 0.7em; */
+}
+body {
+  font-family: "Comic Neue", cursive;
+  line-height: 1.7;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+/* ##################################### utility classes */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.lg-heading {
+  font-size: 3.5rem;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+.text-red {
+  color: red;
+}
+.text-light {
+  color: lightgoldenrodyellow;
+}
+.text-black {
+  color: black;
+}
+.text-gray {
+  color: gray;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.btn-primary {
+  background-color: white;
+  border-radius: 10em;
+}
+
+/* ######################### header styling */
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* for img logo we create this property */
+/* .logo { */
+/* border: 2px solid red;
+  border-radius: 50px;
+  /* color: white; */
+/* display: inline-block;
+  margin-left: 25%;
+  margin-top: 25px;
+  width: 100px; 
+} */
+/* .nav-item { */
+/* border: 2px solid red; */
+/* display: inline-block; */
+/* } */
+/* .nav-items { */
+/* border: 2px solid red; */
+/* float: right;
+  margin-right: 25%;
+  margin-top: 60px; */
+/* } */
+
+/* .nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+} */
+
+/* ############## for WT logo CSS */
+.navbar {
+  /* border: 2px solid white; */
+  padding: 1rem;
+}
+
+/* .header .logo,
+.header .navbar a {
+  color: white;
+} */
+
+.header .navbar .logo {
+  float: left;
+  margin-left: 15%;
+  /* margin-top: 25px;  */
+}
+
+.header .navbar .nav-items {
+  float: right;
+  margin-right: 15%;
+  margin-top: 1rem;
+}
+
+.header .navbar .nav-item {
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+/* a {
+  text-decoration: none;
+  padding: 10px;
+} */
+.navbar a:link,
+.navbar a:visited {
+  color: white;
+}
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+.navbar a:hover {
+  border-bottom: 1px solid white;
+}
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-content {
+  position: absolute;
+  /* border: 2px solid white; */
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradien(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-content p {
+  text-transform: uppercase;
+}
+
+/* ################ showcase section styling ############### */
+.showcase {
+  background: white;
+  padding: 10rem 10rem;
+}
+.row {
+  height: 350px;
+  /* border: 2px solid red; */
+  background-color: lightblue;
+}
+.row1 {
+  margin-bottom: 10rem;
+}
+.row1 .img-box,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+  float: right;
+  width: 50%;
+}
+.row .img-box {
+  /* border: 6px solid green; */
+  height: 100%;
+}
+.row .text-box {
+  /* border: 2px solid rebeccapurple; */
+  padding: 3rem;
+}
+
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
